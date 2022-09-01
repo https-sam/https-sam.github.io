@@ -1,8 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head></head>
-  <body>
-      <p>Hello, World!</p>
-      <p>My name is Sam</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Arial;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5em;
+    }
+    body > p {
+      color: green;
+      font-size: 3.5em;
+    } 
+    #my-img-link {
+      color: grey;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    #my-img  {
+      transition: all .3s ease-in-out;
+      margin-top: 1em;
+      height: 200px;
+      border: 3px solid grey;
+      border-radius: 50%;
+    }
+    #my-img:hover {
+      height: 250px;
+    }
+    #video-link {
+      margin-top: 2em;
+      color: red;
+      font-size: 2em;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <p>Hi, my name is Sam (He / Him)</p>
+  <a href="./img/me.jpeg" id="my-img-link" target="_blank">My picture</a>
+  <img src="./img/me.jpeg" alt="myself" id="my-img"/>
+  <a href="https://www.youtube.com/watch?v=jNQXAC9IVRw" id="video-link" target="_blank">Click here to see my Favorite Youtube video</a>
+</body>
 </html>
