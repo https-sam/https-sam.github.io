@@ -5,9 +5,10 @@ html {
   font-family: sans-serif;
 }
 body {
-  background: linear-gradient(gray 0%,white 25%, white 50%, white 75%, gray 100%);
   margin: 0;
+  background: linear-gradient(#ccc 0%,white 20%, white 50%, white 75%, #ccc 100%);
 }
+
 article {
   width: 210mm;
   height: 297mm;
