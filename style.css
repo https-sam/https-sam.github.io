@@ -2,7 +2,9 @@
 
 
 :root {
-  --theme-primary: #20293A;
+  --theme-darkGray: #20293A;
+  --theme-primary: #111729;
+  --theme-primary-gray: #20293A;
   --theme-gray: #6D7989;
   --theme-blue: #62BAF3;
 }
@@ -62,8 +64,8 @@ main {
 
 #my-img {
   border: 1px solid gray;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
@@ -74,16 +76,24 @@ main {
   align-items: center;
   gap: 1rem;
   display: flex;
-  border: 1px solid var(--theme-gray);
-  border-radius: 20px;
+  background-color: var(--theme-darkGray);
+  border-radius: 5px;
   padding: .3rem .5rem;
 }
 
+.col-profile-container {
+  flex-direction: column;
+  display: flex;
+  height: fit-content;
+  align-items: flex-start;
+}
 
 .col-profile-container > h4 {
   color: white;
   
 }
 .col-profile-container > p {
+  font-size: 13px;
+  margin-top: -1rem;
   color: var(--theme-gray)
 }
