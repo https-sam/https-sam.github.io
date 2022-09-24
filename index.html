@@ -4,59 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATLS 2200 - Assignment 2</title>
-    <style>
-      body {
-        font-family: Arial;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 5em;
-      }
-      body > h1 {
-        color: green;
-        font-size: 3.5em;
-      }
-      #my-img-link {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        color: grey;
-        font-size: 2em;
-        text-decoration: none;
-      }
-      #my-img {
-        transition: all 0.3s ease-in-out;
-        margin-top: 1em;
-        height: 200px;
-        border: 3px solid grey;
-        border-radius: 50%;
-      }
-      #my-img:hover {
-        height: 250px;
-      }
-      #video-link {
-        margin-top: 2em;
-        color: red;
-        font-size: 2em;
-        text-decoration: none;
-      }
-    </style>
+    <title>Sam G</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hi, my name is Sam (He / Him)</h1>
-    <a href="./img/me.jpeg" id="my-img-link" target="_blank"
-      >My picture
-      <img src="./img/me.jpeg" alt="myself" id="my-img" />
-    </a>
-    <a
-      href="https://www.youtube.com/watch?v=jNQXAC9IVRw"
-      id="video-link"
-      target="_blank"
-    >
-      <h5>Click here to see my Favorite Youtube video</h5>
-    </a>
+    <main class="main-container">
+      <section class="main-side-navbar">
+        <ul>
+          <li class="side-bar-item">Home</li>
+          <li class="side-bar-item">About</li>
+          <li class="side-bar-item">Projects</li>
+          <li class="side-bar-item">Resume</li>
+        </ul>
+      </section>
+
+      <section class="main-content">
+        <div class="profile-container">
+          <img src="./img/me.jpeg" id="my-img" />
+          <div class="col-profile-container">
+            <h4>Sam Goto</h4>
+            <p>
+              Hi, I am a student at University of Colorado boulder. I am a full
+              stack Software developer. This is a demo project for my class.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
   </body>
 </html>
