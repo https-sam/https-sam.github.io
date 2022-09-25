@@ -2,7 +2,7 @@ const themeBlue = "#62BAF3";
 const themeGray = "#6D7989";
 const sideItems = document.querySelectorAll(".side-bar-item");
 
-function highlightThisItem(thisItem) {
+function deleteThisItem(thisItem) {
   for (const item of sideItems) {
     if (item === thisItem) {
       item.style.borderColor = themeBlue;
@@ -17,5 +17,5 @@ function highlightThisItem(thisItem) {
 }
 
 for (const item of sideItems) {
-  item.addEventListener("click", () => highlightThisItem(item));
+  item.addEventListener("click", () => deleteThisItem(item));
 }
