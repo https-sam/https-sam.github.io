@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
 
 :root {
   --theme-darkGray: #20293A;
@@ -7,6 +7,7 @@
   --theme-primary-gray: #20293A;
   --theme-gray: #6D7989;
   --theme-blue: #62BAF3;
+  --code-font: 'Source Code Pro', monospace;
 }
 
 
@@ -28,9 +29,6 @@ main {
 }
 
 
-.main-side-navbar {
-  
-}
 
 .main-side-navbar > ul > li:nth-last-of-type(4) {
   color: var(--theme-blue);
@@ -55,12 +53,22 @@ main {
 
 
 .main-content {
+  width: 100%;
   height: 100%;
   flex: 1;
   display: flex;
-  justify-content: center;
-  padding-top: 20rem;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5rem;
 }
+
+.home-title {
+  color: white;
+  font-family: var(--code-font);
+  font-size: 2.4rem;
+}
+
 
 #my-img {
   border: 1px solid gray;
@@ -70,7 +78,8 @@ main {
 }
 
 .profile-container {
-  width: 50%;
+  box-shadow: inset 0 1px 1px hsla(0, 0%, 60%, 0.2);
+  width: 45%;
   height: fit-content;
   justify-content: center;
   align-items: center;
@@ -78,7 +87,7 @@ main {
   display: flex;
   background-color: var(--theme-darkGray);
   border-radius: 5px;
-  padding: .3rem .5rem;
+
 }
 
 .col-profile-container {
@@ -96,4 +105,29 @@ main {
   font-size: 13px;
   margin-top: -1rem;
   color: var(--theme-gray)
+}
+
+
+@media only screen and (max-width: 800px) {
+  .profile-container {
+    width: 80%;
+  }
+  .main-content {
+    margin-top: 1rem;
+  }
+
+  .main-side-navbar {
+    display: none;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .col-profile-container {
+    width: 70%;
+  }
 }
