@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Source+Serif+4:wght@600&display=swap');
+
+
+
+.banner-text-container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home-title-c {
+  display: flex;
+  justify-content: center;
+}
+
+.authot-name-c {
+  position: relative;
+}
+
+.home-title-container div {
+  width: 50%;
+}
+
+.intro-banner-myself {
+  width: 65%;
+  height: 7em;
+}
+
+
+.intro-banner-myself > p {
+  font-size: .9em;
+  color: grey;
+}
+
+
+.author-name {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 2em;
+  font-size: 1.3em;
+  position: absolute;
+  right: 50%;
+}
+
+.intro-banner-text {
+  text-align: left;
+  width: 65%;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+
+.bannter-hr {
+  width: 65%;
+}
+
+
+.navbar_container {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30vh;
+}
+
+
+.header-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 75%;
+    background-image: linear-gradient( -28deg, #2953b4 60%, #292423 60%);
+}
+
+.header-img img {
+    height: 100%;
+}
+
+#img-right {
+    float: right;
+}
+.text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.header-text1 {
+    position: relative;
+    font-weight:bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    max-height: 10px !important;
+    font-size: 2.6rem;
+    color: white;
+}
+
+.header-text2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    text-align: center;
+    max-height: 20%;
+    font-size: 1.3rem;
+    color: white;
+    margin-top: auto;
+    margin-bottom: 3rem;
+}
+                                                                                                                                                                                                                             
+@media screen and (max-width: 1300px), screen and (max-height: 800px)
+ {
+    .header-text1{
+      font-size: 30px;
+    }
+    .header-text2 {
+        font-size: 19px;
+    }
+  }
+
+
+.navbar-header {
+    font-family: 'Source Serif 4', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4F71BE;
+    min-height: 3em;
+    width: 100%;
+    box-shadow: 0 1px 6px grey;
+}
+
+#header-intro {
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 12em;
+    margin-right: 0;
+    position: relative;
+}
+
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 40px;
+    line-height: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+#menu-icon {
+    font-size: 30px;
+    color: white;
+    line-height: 2rem;
+    margin-right: 1rem;
+    display: none;
+}
+
+
+
+#list-introduction {
+    margin-top: 2rem;
+    display: none;
+}
+#list-lucan, #list-this {
+    display: none;
+}
+
+#close-btn {
+    display: none;
+}
+
+ul li::after, .side-header::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+ul li:hover::after, .side-header:hover::after {
+    width: 100%;
+}
+
+
+.intro-drop-menu {
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    height: 7em;
+    width: 8em;
+    top: .5em;
+    background-color: #5071becc;
+    padding-top: .7em;
+    display:none;
+    left: -1.7em;
+}
+
+.intro-drop-menu::after {
+    content: '';
+    width: 10em;
+    background-color:#2953b4;
+    position: absolute;
+    bottom: 0;
+    height: .5em;
+    left: 0;
+}
+
+#header-intro:hover .intro-drop-menu {
+    display: flex;
+}
+
+.intro-drop-menu:hover {
+    display: flex;
+}
+
+.intro-drop-menu >  li {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: -.6em;
+    font-size: .9em;
+}
+.navbar_list {
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
+}
+#nav-links {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav_list-container { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-height: 658px) {
+    .header-img {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1254px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    .navbar-header {
+        box-shadow: none;
+    }
+    .navbar_container {
+        height: 20vh;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    #list-download {
+        display: block;
+    }
+
+    #close-btn {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        margin-top: -2em;
+    }
+    
+    #list-introduction, #list-lucan, #list-this {
+        display: block;
+    }
+    .header-img {
+        display: none;
+    }
+    #header-intro {
+        display: none;
+    }
+    #header-download {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+    .nav_list-container {
+        width: 100vw !important;
+        height: 100vh;
+        background: #2c3e50;
+        opacity: 98%;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: stretch;
+        align-items: center;
+        position: absolute;
+        right: -150%;
+        z-index: 1;
+        top: 2em;
+        transition: all 0.5s ease-in-out;
+        overflow: auto;
+    }
+
+    nav ul li {    
+        margin-top: 4%;
+        width: fit-content;
+        display: block;
+    }
+    nav ul li a {
+        font-size: 100%;
+    }
+}
+#list-lucan {
+    margin-bottom: -1em;
+}
+
+@media screen and (max-width: 1391px) {
+    .navbar-header { /* makes the nav bar thicker to fit a tags */
+        height: 30%;
+    }
+}
+
+
+.about-banner {
+  color: #4F71BE;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 768px)  {
+  .about-banner {
+      margin-top: -1em;
+      color: rgb(79, 113, 190);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2em;
+      margin-left: 18%; 
+  }
+  .bannter-hr {
+      width: 85%;
+  }
+
+  .intro-banner-text {
+      text-align: left;
+      width: 82%;
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 2em;
+      font-size: 1.3em;
+  }
+}
+
+
+
+@media screen and (max-width: 1254px) {
+  .home-title-container {
+      margin-top: 7em;
+  }
+}
