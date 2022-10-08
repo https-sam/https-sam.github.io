@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f83e771.css",
+    "main.js": "/static/js/main.3de87a0c.js",
+    "static/media/me.png": "/static/media/me.0b3f75e6754d2a20b3d3.png",
+    "static/media/lucan.png": "/static/media/lucan.470f44d513965c005d31.png",
+    "static/media/algo.png": "/static/media/algo.25a83139eae3cc74f3b2.png",
+    "static/media/rnative.png": "/static/media/rnative.81ed438b18e24116794d.png",
+    "static/media/ksab.png": "/static/media/ksab.68a4cf10f57deafda35c.png",
+    "static/media/linux.png": "/static/media/linux.2471a7083a54eca9f12a.png",
+    "static/media/dart.png": "/static/media/dart.de5f812a3d3884a6a4e8.png",
+    "static/media/react.png": "/static/media/react.283bf42c605cfc49cf49.png",
+    "static/media/express.png": "/static/media/express.cca64e0f360897258ecb.png",
+    "static/media/mongo.png": "/static/media/mongo.25e861b553bfa699bbda.png",
+    "static/media/next.png": "/static/media/next.48ddc8121a0fcb543d64.png",
+    "static/media/firebase.png": "/static/media/firebase.6ea3b0b39b97b0e49515.png",
+    "static/media/docker.png": "/static/media/docker.1d3ff0b1550659e3203a.png",
+    "static/media/flutter.png": "/static/media/flutter.2e31d94a009e134a4804.png",
+    "static/media/node.png": "/static/media/node.55746a52ebe93450f209.png",
+    "static/media/figma.png": "/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/typescript.png": "/static/media/typescript.01020bf72a8c4f1a889d.png",
+    "static/media/aws.png": "/static/media/aws.3a5e158692fe819a37c7.png",
+    "static/media/sql.png": "/static/media/sql.01ca72463c71a46118f8.png",
+    "index.html": "/index.html",
+    "static/media/github.svg": "/static/media/github.cb4637bcb67719bca8b963ff872cf4b1.svg",
+    "main.0f83e771.css.map": "/static/css/main.0f83e771.css.map",
+    "main.3de87a0c.js.map": "/static/js/main.3de87a0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f83e771.css",
+    "static/js/main.3de87a0c.js"
+  ]
+}
