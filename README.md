@@ -2,7 +2,7 @@
 
 - CU Boulder, ATLS 2200
 
-[Demo](https://https-sam.github.io/) <br/>
+[Portfolio](https://https-sam.github.io/) <br/>
 
 # Pattern Library
 
