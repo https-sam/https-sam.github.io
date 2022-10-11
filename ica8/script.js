@@ -1,5 +1,6 @@
 document.getElementById("btn1").addEventListener("click", () => {
-  alert("You clicked on btn1");
+  document.getElementById("btn1").style.backgroundColor = "red";
+  alert("Button color has been changed to red");
 });
 
 document.addEventListener("keydown", (e) => {
