@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn1 {
+  padding: 1rem 3rem;
+  border: 1px solid #e9c46a;
+  background-color: #fb8500;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#btn1:hover {
+  background-color: #cb4c07;
+}
+
+#key-event-paragraph {
+  color: gray;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
