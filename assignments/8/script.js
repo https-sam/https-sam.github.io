@@ -8,10 +8,14 @@ function randomValueFromArray(array) {
 }
 
 const storyText =
-  "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+  "It was 94 fahrenheit in my car, so :insertx: got out of the car. After 10 mins, :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, and he was so suprised that he passed out — :insertx: weighs 300 pounds, and it was freezing outside";
 
-const insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
-const insertY = ["the soup kitchen", "Disneyland", "the White House"];
+const insertX = ["Santa does not exist", "Small Mammy", "Write and erase"];
+const insertY = [
+  "the banana in the kitchen",
+  "Universal studio",
+  "The Red room",
+];
 const insertZ = [
   "spontaneously combusted",
   "melted into a puddle on the sidewalk",
