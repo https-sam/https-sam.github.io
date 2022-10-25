@@ -45,9 +45,9 @@
       // Iterating through the catData
       catData.forEach((el, index) => {
         motherInfo += el.name + `${index !== catData.length - 1 ? ", " : "."}`;
-        el.kittens.forEach((c) => {
-          if (c.gender === "m") kittenInfo.male += 1;
-          else if (c.gender === "f") kittenInfo.female += 1;
+        el.kittens.forEach(({ gender }) => {
+          if (gender === "m") kittenInfo.male += 1;
+          else if (gender === "f") kittenInfo.female += 1;
           kittenInfo.totalCats += 1;
         });
       });
