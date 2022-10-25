@@ -43,9 +43,9 @@
 
     function displayCatInfo(catData) {
       // Iterating through the catData
-      catData.forEach((el, index) => {
-        motherInfo += el.name + `${index !== catData.length - 1 ? ", " : "."}`;
-        el.kittens.forEach(({ gender }) => {
+      catData.forEach(({ name, kittens }, index) => {
+        motherInfo += name + `${index !== catData.length - 1 ? ", " : "."}`;
+        kittens.forEach(({ gender }) => {
           if (gender === "m") kittenInfo.male += 1;
           else if (gender === "f") kittenInfo.female += 1;
           kittenInfo.totalCats += 1;
