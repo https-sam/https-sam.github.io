@@ -9,6 +9,7 @@ const employeesDataURI =
 
 fetcher(employeesDataURI)
   .then(({ data }) => {
+    console.log(data);
     data = JSON.parse(data);
     console.log(data.companyName);
   })
