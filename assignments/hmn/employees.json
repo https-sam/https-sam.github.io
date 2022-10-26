@@ -4,7 +4,8 @@
 		"department": "Tech",
 		"designation": "Manager",
 		"salary": "40000",
-		"raise eligible": "true"
+		"raise eligible": "true",
+		"wfh": "true"
 	],
 	[
 		"firstName": "Mary",
@@ -12,6 +13,7 @@
 		"designation": "Trainee",
 		"salary": "18500",
 		"raise eligible": "true"
+		"wfh": "false"
 	],
 	[
 		"firstName": "Bill",
@@ -19,5 +21,13 @@
 		"designation": "Executive",
 		"salary": "21200",
 		"raise eligible": "false"
+		"wfh": "false"
 	],
+	[
+		"firstName": "Anna",
+		"department": "Tech",
+		"designation": "Executive",
+		"salary": "25600",
+		"raise eligible": "false"
+		"wfh": "true"
 }
