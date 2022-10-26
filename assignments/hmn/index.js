@@ -12,4 +12,4 @@ fetcher(employeesDataURI)
     data = JSON.parse(data);
     console.log(data.companyName);
   })
-  .catch((e) => console.log(data));
+  .catch((e) => console.log(e));
