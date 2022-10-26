@@ -5,8 +5,10 @@ const fetcher = (uri) => {
 };
 
 const employeesDataURI =
-  "https://raw.githubusercontent.com/https-sam/https-sam.github.io/main/assignments/hmn/employees.json";
+  "https://raw.githubusercontent.com/https-sam/https-sam.github.io/main/assignments/hmn/company.json";
 
 fetcher(employeesDataURI)
-  .then((data) => console.log(data.data))
+  .then(({ data }) => {
+    console.log(data.companyName);
+  })
   .catch((e) => console.log(data));
