@@ -1,4 +1,4 @@
->const fetcher = (uri) => {
+const fetcher = (uri) => {
     return fetch(uri)
       .then((res) => res.json())
       .then((data) => data);
@@ -25,11 +25,23 @@
     return data;
   };
 
+  const wfh = (data) => {
+    for (const employee of data.employees) {
+      if (employee.wfh === "true") {
+        console.log(`Q6. ${employee.firstName} is working from home`);
+      }
+    }
+    return data;
+  };
+
   fetcher(employeesDataURI)
     .then((data) => {
-      console.log(data);
-      logAns(data, "Total salary of the employees before raise is:");
+      console.log("Q1. ", data);
+      console.log("Q2. ", data);
+      console.log("Q3. ", data);
+      logAns(data, "Q4. Total salary of the employees before raise is:");
       data = raiseTime(data);
-      logAns(data, "Total salary of the employees after raise is:");
+      logAns(data, "Q5. Total salary of the employees after raise is:");
+      data = wfh(data);
     })
     .catch((e) => console.log(e));
