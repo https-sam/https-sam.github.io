@@ -7,7 +7,7 @@
          "department":"Tech",
          "designation":"Manager",
          "salary":"40000",
-         "raise eligible":"true",
+         "raiseEligible":"true",
          "wfh":"true"
       },
       {
@@ -15,7 +15,7 @@
          "department":"Finance",
          "designation":"Trainee",
          "salary":"18500",
-         "raise eligible":"true",
+         "raiseEligible":"true",
          "wfh":"false"
       },
       {
@@ -23,7 +23,7 @@
          "department":"HR",
          "designation":"Executive",
          "salary":"21200",
-         "raise eligible":"false",
+         "raiseEligible":"false",
          "wfh":"false"
       },
       {
@@ -31,7 +31,7 @@
          "department":"Tech",
          "designation":"Executive",
          "salary":"25600",
-         "raise eligible":"false",
+         "raiseEligible":"false",
          "wfh":"true"
       }
    ]
