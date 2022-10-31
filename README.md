@@ -6,4 +6,4 @@
 
 # Pattern Library
 
-<img src="./img/pattern-library.png" width="500px" height="500px">
+<img src="./img/pattern-library.png" width="520px" height="520px">
