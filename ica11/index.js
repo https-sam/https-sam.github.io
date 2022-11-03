@@ -34,10 +34,9 @@ const getQuote = () => {
 
 const btn = document.querySelector("#js-new-quote");
 btn.addEventListener("click", getQuote);
-
-// not sure if we need to store the previous quote? if no here the code
-if (typeof localStorage !== "undefined" && localStorage.getItem("quote")) {
-  displayQuote(localStorage.getItem("quote"));
-}
-
 getQuote();
+
+// not sure if we need to store the previous quote? if so here's the code
+// if (typeof localStorage !== "undefined" && localStorage.getItem("quote")) {
+//  displayQuote(localStorage.getItem("quote"));
+//}
