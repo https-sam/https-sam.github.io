@@ -1,5 +1,5 @@
 const API_URI = "https://api.whatdoestrumpthink.com/api/v1/quotes/random";
-const ERROR_MESSAGE = "Error Occured during fetching data, Please try again.";
+const ERROR_MESSAGE = "Error Occured while fetching data, Please try again.";
 const QUOTE_CONTAINER = document.getElementById("js-quote-text");
 
 const fetchQuote = () => {
