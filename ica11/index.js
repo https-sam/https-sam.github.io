@@ -3,6 +3,9 @@ const ERROR_MESSAGE = "Error Occured while fetching data, Please try again.";
 const QUOTE_CONTAINER = document.getElementById("js-quote-text");
 
 const fetchQuote = () => {
+  document.getElementById("loading-icon").style.display = "block";
+  document.getElementById("btn-text").style.display = "none";
+
   return new Promise((resolve, reject) => {
     fetch(API_URI)
       .then((res) => res.json())
@@ -25,6 +28,15 @@ const getQuote = () => {
       console.log(message);
       displayQuote(message);
       localStorage.setItem("quote", message);
+      document
+        .getElementById("js-tweet")
+        .setAttribute(
+          "href",
+          `http://twitter.com/intent/tweet?text=${message}`
+        );
+
+      document.getElementById("loading-icon").style.display = "none";
+      document.getElementById("btn-text").style.display = "block";
     })
     .catch((e) => {
       console.log(e);

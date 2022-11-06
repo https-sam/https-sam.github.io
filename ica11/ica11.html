@@ -15,12 +15,17 @@
       </section>
       <section class="controls">
         <button type="button" id="js-new-quote" class="new-quote button">
-          Generate a new quote
+          <p id="btn-text">Generate a new Quote</p>
+          <img src="./loading.svg" id="loading-icon" />
         </button>
         <a class="twitter button" id="js-tweet" target="_blank" rel="noreferrer"
           >Tweet it!</a
         >
       </section>
+      <p id="description-text">
+        I've added a loading aniamtion when fetching and Twitter API to post a
+        quote
+      </p>
     </div>
     <script src="./index.js" defer></script>
   </body>
