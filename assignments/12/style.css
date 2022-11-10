@@ -1,0 +1,52 @@
+.phone-key {
+  width: 90px;
+  height: 80px;
+  display: flex;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#delete-btn {
+  cursor: pointer;
+}
+
+#phone-number,
+.prompt {
+  font-family: Arial;
+}
+
+#phone-number {
+  letter-spacing: 5px;
+  min-height: 25px;
+  font-size: 20px;
+  min-width: 200px;
+}
+
+.phone-key:hover {
+  background-color: #d2d6b2;
+}
+
+body > form {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #e9edc9;
+  padding: 10px;
+}
