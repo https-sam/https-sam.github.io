@@ -86,7 +86,12 @@ article > p {
 }
 
 #phone-number-container > img {
+  transition: all 100ms ease-in-out;
   margin-left: auto;
+}
+
+#phone-number-container > img:hover {
+  transform: scale(1.1);
 }
 
 #delete-btn {
