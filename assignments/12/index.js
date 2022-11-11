@@ -23,6 +23,3 @@ for (const key of keys) {
     enteredNum.innerText += val;
   });
 }
-
-
-
