@@ -1,6 +1,7 @@
 const keys = Array.from(document.querySelectorAll(".phone-key"));
 const enteredNum = document.getElementById("phone-number");
 const deleteBtn = document.getElementById("delete-btn");
+const converBtn = document.getElementById("convert-btn");
 
 deleteBtn.addEventListener("click", () => {
   const num = enteredNum.innerHTML;
@@ -11,10 +12,17 @@ deleteBtn.addEventListener("click", () => {
   );
 });
 
+converBtn.addEventListener("click", () => {
+  enteredNum.innerHTML = BigInt('0b' + enteredNum.innerHTML)
+})
+
 for (const key of keys) {
-  const val = 10 - parseInt(key.innerHTML);
+  const val = parseInt(key.innerHTML);
   key.addEventListener("click", () => {
-    if (enteredNum.innerHTML.length > 11) return;
+    if (isNaN(val)) return;
     enteredNum.innerText += val;
   });
 }
+
+
+

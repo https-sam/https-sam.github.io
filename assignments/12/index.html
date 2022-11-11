@@ -8,7 +8,10 @@
     <title>Document</title>
   </head>
   <body>
-    <h2 class="prompt">Enter your phone number (Broken)</h2>
+    <h2 class="prompt">Enter your phone number (in binary)</h2>
+		<article>
+			<p>If your phone number is 720 334 5323, enter <br/> 110101101010110100101001110101011 and hit convert!</p>
+		</article>
     <section class="display">
       <p id="phone-number"></p>
       <?xml version="1.0" encoding="UTF-8"?><svg
@@ -32,11 +35,10 @@
     </section>
 
     <form>
+      <div class="phone-key">0</div>
       <div class="phone-key">1</div>
 
-      <div class="phone-key">2</div>
-
-      <div class="phone-key">3</div>
+      <!-- <div class="phone-key">3</div>
 
       <div class="phone-key">4</div>
 
@@ -49,7 +51,11 @@
       <div class="phone-key">8</div>
 
       <div class="phone-key">9</div>
+			<div class="phone-key"></div>
+      <div class="phone-key">0</div>
+      <div class="phone-key"></div> -->
     </form>
+		<button id="convert-btn">Convert</button>
 
     <script src="./index.js"></script>
   </body>
