@@ -1,25 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap');
+
 .phone-key {
-  width: 90px;
-  height: 80px;
-  display: flex;
-  border: 1px solid gray;
-  align-items: center;
-  justify-content: center;
+  width: 100px;
+  height: 65px;
+  border: 1px solid rgb(178, 178, 178);
   cursor: pointer;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Encode Sans SC', sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
 
-.display {
+.body-container {
+  background-image: url(https://media.istockphoto.com/id/1205815347/photo/abstract-binary-background.jpg?b=1&s=170667a&w=0&k=20&c=lDE6E03nm8gVCJPxU6SYxRXWhZNsEHdSBwC63i9aZlU=);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  padding: 0 2rem;
+  border-radius: 20px;
+  flex-direction: column;
+  font-family: Arial;
+  background-color: #e5e5e5;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  min-width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  border: 2px solid #f1f1f1;
+}
+
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+article {
+  background-color: #6385c4;
+  padding: 0 2rem;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+article::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 7px;
+  background-color: #3057b9;
+  border-radius: 10px 0 0 10px;
+}
+
+article > p {
+  font-size: 1.1rem;
+  color: rgb(29, 41, 109);
+  font-weight: 700;
+}
+
+#phone-number-container {
+  border: 1px solid rgb(193, 193, 193);
+  height: 2.5rem;
+  border-radius: 15px;
+  width: 40rem;
+  background-color: rgba(202, 202, 202, .3);
+  padding: 0 2rem;
+}
+
+#phone-number-container > img {
+  margin-left: auto;
 }
 
 #delete-btn {
@@ -31,33 +98,45 @@ body {
   letter-spacing: 5px;
   min-height: 25px;
   font-size: 20px;
+  overflow: auto;
+  color: white;
+  font-weight: 500;
 }
 
 .phone-key:hover {
-  background-color: #d2d6b2;
+  background-color: rgba(202, 202, 202, .3);
+}
+
+.phone-key:nth-of-type(1) {
+  border-radius: 15px 0px 0px 15px;
+}
+.phone-key:nth-of-type(2) {
+  border-radius: 0px 15px 15px 0px;
 }
 
 #convert-btn {
-  margin-top: 2rem;
-  width: 4rem;
-  height: 2rem;
-  background-color: #4b82c5;
+  font-family: 'Encode Sans SC', sans-serif;
+  margin: 1.5rem 0rem 1rem 0rem;
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #3a86ff;
   border: none;
   color: white;
   border-radius: 5px;
+  font-size: 1.15rem;
   cursor: pointer;
 }
 
 #convert-btn:hover {
-
-  background-color: #246fca;
+  background-color: rgb(38, 73, 126);
 }
 
-body > form {
+main > form {
+  color: white;
+  font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 15px;
   width: fit-content;
   height: fit-content;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #e9edc9;
-  padding: 10px;
+  /* background-color: rgb(234, 234, 234); */
 }
