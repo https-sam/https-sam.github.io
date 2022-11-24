@@ -11,7 +11,7 @@ const refreshPfp = () => {
   document.getElementById('pfp').src = pfps[Math.floor(Math.random() * (5 - 0))]
 }
 refreshPfp();
-
+/******** Generating a random pfp *******/
 
 
 
