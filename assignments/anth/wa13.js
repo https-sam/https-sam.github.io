@@ -8,7 +8,7 @@ const pfps = [
 ]
 
 const refreshPfp = () => {
-  document.getElementById('pfp').src = pfps[Math.floor(Math.random() * (5 - 0))]
+    document.getElementById('pfp').src = pfps[Math.floor(Math.random() * (pfps.length))] || pfps[0]
 }
 refreshPfp();
 /******** Generating a random pfp *******/
