@@ -118,9 +118,8 @@ section > p {
 }
 
 /*
-very tall screen issue &  Mobile, but in landscape mode
-caused by the element being absolytely positioned
-fixed it by not using display absolute
+Most issues were being caused by the absolytely positioned elements.
+Fixed it by not using absolute positioning and using flex boxes
 
 top: 80vh; is the issue (absolutely positioned)
 @media screen and (max-width: 1000px)
