@@ -44,7 +44,7 @@ const animateAndRemove = (element) => {
  * @param {HTMLelement} el1 - an element to be removed
  * @param {HTMLelement} el2 - an element to be opened
  */
-const removeThisAndOpenThis = async (el1, el2) => {
+const removeThisAndDisplayThis = async (el1, el2) => {
   refreshPfp() // refreshing the pfp
   await animateAndRemove(el2) // removing el1
   .then(() => {
@@ -54,5 +54,5 @@ const removeThisAndOpenThis = async (el1, el2) => {
 
 
 // attaching the function to the event listeners of the buttons
-document.getElementById("home-btn").addEventListener('click', () => removeThisAndOpenThis(homeSection, aboutSection))
-document.getElementById("about-btn").addEventListener('click', () => removeThisAndOpenThis(aboutSection, homeSection))
+document.getElementById("home-btn").addEventListener('click', () => removeThisAndDisplayThis(homeSection, aboutSection))
+document.getElementById("about-btn").addEventListener('click', () => removeThisAndDisplayThis(aboutSection, homeSection))
