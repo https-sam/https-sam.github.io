@@ -118,7 +118,7 @@ section > p {
 }
 
 /*
-Most issues were being caused by the absolytely positioned elements.
+Most issues were being caused by the absolutely positioned elements.
 Fixed it by not using absolute positioning and using flex boxes
 
 top: 80vh; is the issue (absolutely positioned)
