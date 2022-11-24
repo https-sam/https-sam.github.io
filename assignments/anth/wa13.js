@@ -16,7 +16,7 @@ refreshPfp();
 
 
 
-/*********** Functions to animate when switching sections ************/
+/*********** Functions that animate transitions when switching sections ************/
 
 // getting section elements to be removed / opened
 // define more sections / pages here
