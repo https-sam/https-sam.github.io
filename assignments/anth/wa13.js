@@ -14,7 +14,11 @@ const refreshPfp = () => {
 refreshPfp();
 
 
-/* Functions to animate switching section */
+
+
+
+/*********** Functions to animate when switching sections ************/
+
 // getting section elements to be removed / opened
 const homeSection = document.getElementById('home')
 const aboutSection = document.getElementById('about')
