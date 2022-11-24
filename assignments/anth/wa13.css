@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Poppins:wght@200;300;500&display=swap');
+
+
+
+
+#about {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 1500px;
+  display: flex;
+  align-items: start;
+  padding: 0 12rem;
+  gap: 8rem;
+}
+
+aside > ul {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  transition: all 100ms ease-in;
+}
+
+aside > ul > li {
+  font-weight: 300;
+  color: rgb(63, 63, 63);
+  margin: .4rem 0;
+}
+
+aside > ul > li:hover {
+  cursor: pointer;
+  color: #800000;
+}
+
+aside > h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 35px 0, 10px;
+  margin-left: -2px;
+  font-size: 28px;
+  letter-spacing: .8px;
+  font-weight: 300;
+  font-weight: bold;
+  color: #800000;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+section > p {
+  line-height: 19px;
+}
+
+
+/* Home - most recently section */
+.update-container {
+  margin: 1rem 0;
+}
+
+.update-date {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.update-divider {
+  margin: 0 .5rem;
+}
+
+.update-description, .update-divider {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(78, 76, 76);
+}
+
+/**********************/
+
+
+/* Red announcemenet container */
+.announcement-container {
+  background-color: #EFDFDF;
+  color: #800000;
+  padding: .3rem .8rem;
+  border-radius: 4px;
+  transition: all 200ms ease-out;
+  margin-bottom: 2rem;
+}
+.announcement-container:hover {
+  cursor: pointer;
+  background-color: #800000;
+  color: #EFDFDF;
+}
+/**********************/
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: 100vh;
+    padding-top: 3rem;
+  }
+  main {
+    padding: 1rem 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/*
+very tall screen issue &  Mobile, but in landscape mode
+caused by the element being absolytely positioned
+fixed it by not using display absolute
+
+top: 80vh; is the issue (absolutely positioned)
+@media screen and (max-width: 1000px)
+www.anthonypinter.com:1:2344.card {
+  top: 80vh;
+  left: 0;
+  min-width: 100vw;
+  padding: 0 30px;
+} */
