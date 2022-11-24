@@ -10,7 +10,6 @@ const pfps = [
 const refreshPfp = () => {
   document.getElementById('pfp').src = pfps[Math.floor(Math.random() * (5 - 0))]
 }
-
 refreshPfp();
 
 
@@ -26,10 +25,11 @@ const aboutSection = document.getElementById('about')
 /**
  * @param {HTMLelement} 
  * @returns {Promise}
- * This function first sets the element's opacity to 0 (which is animated in the css file)
+ * This function animates and removes the element passed
+ * First sets the element's opacity to 0 (which is animated in the css file)
  * then, waits for 200ms and sets display to none, which removes the element from the DOM tree
  */
-const removethisAndAnimate = (element) => {
+const animateRemoval = (element) => {
   return new Promise((resolve) => {
     element.style.opacity = '0';
     setTimeout(() => {
@@ -46,7 +46,7 @@ const removethisAndAnimate = (element) => {
  */
 const removeThisAndOpenThis = async (el1, el2) => {
   refreshPfp()
-  await removethisAndAnimate(el2) // removing el1
+  await animateRemoval(el2) // removing el1
   .then(() => {
     el1.style.display = "block" // opening el2
   })
