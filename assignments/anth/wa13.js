@@ -18,11 +18,11 @@ refreshPfp();
 
 /*********** Functions that animate transitions when switching sections ************/
 
-// getting section elements to be removed / opened
 // define more sections / pages here
 const homeSection = document.querySelector('.home-section')
 const aboutSection = document.querySelector('.about-section')
 const publicationsSection = document.querySelector('.publications-section')
+
 /**
  * @param {HTMLelement} 
  * @returns {Promise}
