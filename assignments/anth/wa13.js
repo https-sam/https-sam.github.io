@@ -29,7 +29,7 @@ const aboutSection = document.getElementById('about')
  * First sets the element's opacity to 0 (which is animated in the css file)
  * then, waits for 200ms and sets display to none, which removes the element from the DOM tree
  */
-const animateRemoval = (element) => {
+const animateAndRemove = (element) => {
   return new Promise((resolve) => {
     element.style.opacity = '0';
     setTimeout(() => {
@@ -45,8 +45,8 @@ const animateRemoval = (element) => {
  * @param {HTMLelement} el2 - an element to be opened
  */
 const removeThisAndOpenThis = async (el1, el2) => {
-  refreshPfp()
-  await animateRemoval(el2) // removing el1
+  refreshPfp() // refreshing the pfp
+  await animateAndRemove(el2) // removing el1
   .then(() => {
     el1.style.display = "block" // opening el2
   })
