@@ -44,9 +44,9 @@ const animateAndRemove = (element) => {
  * @param {HTMLelement} el1 - an element to be removed
  * @param {HTMLelement} el2 - an element to be opened
  */
-const removeThisAndDisplayThis = async (el1, el2) => {
+const removeThisAndDisplayThis = (el1, el2) => {
   refreshPfp() // refreshing the pfp
-  await animateAndRemove(el2) // removing el1
+  animateAndRemove(el2) // removing el1
   .then(() => {
     el1.style.display = "block" // opening el2
   })
