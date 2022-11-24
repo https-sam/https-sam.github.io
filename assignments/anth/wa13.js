@@ -19,9 +19,10 @@ refreshPfp();
 /*********** Functions to animate when switching sections ************/
 
 // getting section elements to be removed / opened
-const homeSection = document.getElementById('home')
-const aboutSection = document.getElementById('about')
-
+// define more sections / pages here
+const homeSection = document.querySelector('.home-section')
+const aboutSection = document.querySelector('.about-section')
+const publicationsSection = document.querySelector('.publications-section')
 /**
  * @param {HTMLelement} 
  * @returns {Promise}
@@ -35,24 +36,28 @@ const animateAndRemove = (element) => {
     setTimeout(() => {
       element.style.display = 'none';
       element.style.opacity = '100'; // setting back the opacity so it appears on the page later when this option is selected
+      element.id = "hiddenSection" // setting id to hiddenSection
       resolve()
     }, 200)
   })
 }
 
 /**
- * @param {HTMLelement} el1 - an element to be removed
- * @param {HTMLelement} el2 - an element to be opened
+ * @param {HTMLelement} sectionToBeDisplayed 
  */
-const removeThisAndDisplayThis = (el1, el2) => {
+const switchSection = (sectionToBeDisplayed) => {
   refreshPfp() // refreshing the pfp
-  animateAndRemove(el2) // removing el1
+
+  const currSection = document.getElementById("displayedSection") // A section currently being displayed
+  animateAndRemove(currSection) // remove it
   .then(() => {
-    el1.style.display = "block" // opening el2
+    sectionToBeDisplayed.id = "displayedSection"
+    sectionToBeDisplayed.style.display = "block" // displaying new section
   })
 }
 
 
 // attaching the function to the event listeners of the buttons
-document.getElementById("home-btn").addEventListener('click', () => removeThisAndDisplayThis(homeSection, aboutSection))
-document.getElementById("about-btn").addEventListener('click', () => removeThisAndDisplayThis(aboutSection, homeSection))
+document.getElementById("home-btn").addEventListener('click', () => switchSection(homeSection))
+document.getElementById("about-btn").addEventListener('click', () => switchSection(aboutSection))
+document.getElementById("publications-btn").addEventListener('click', () => switchSection(publicationsSection))
