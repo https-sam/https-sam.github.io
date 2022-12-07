@@ -3,7 +3,7 @@
 - CU Boulder, ATLS 2200
 
 [Midterm Project](https://www.samgoto.com) <br/>
-[Final Project](http://samssudokusolver.netlify.app) <br/>
+
 
 # Pattern Library
 
