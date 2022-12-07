@@ -2,7 +2,8 @@
 
 - CU Boulder, ATLS 2200
 
-[Portfolio](https://https-sam.github.io/) <br/>
+[Midterm Project](https://www.samgoto.com) <br/>
+[Final Project](http://samssudokusolver.netlify.app) <br/>
 
 # Pattern Library
 
